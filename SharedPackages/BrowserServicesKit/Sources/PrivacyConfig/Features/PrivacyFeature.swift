@@ -419,6 +419,9 @@ public enum AIChatSubfeature: String, Equatable, PrivacySubfeature {
     /// Enables support for adding multiple page contexts to a single chat session
     case multiplePageContexts
 
+    /// Enables attaching content from multiple open tabs to Duck.ai chat
+    case attachMoreTabs
+
     /// Enables page context feature on iPad
     case iPadPageContext
 
