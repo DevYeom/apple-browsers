@@ -984,7 +984,6 @@
 		983D71B12A286E810072E26D /* SyncDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D71B02A286E810072E26D /* SyncDebugViewController.swift */; };
 		984147AE24F0261A00362052 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984147B024F0261A00362052 /* Feedback.storyboard */; };
 		984147B424F0264B00362052 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984147B624F0264B00362052 /* Authentication.storyboard */; };
-		984147B724F0268D00362052 /* PrivacyDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984147B924F0268D00362052 /* PrivacyDashboard.storyboard */; };
 		984147C024F026A300362052 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984147C224F026A300362052 /* Tab.storyboard */; };
 		984147C324F026C800362052 /* HomeRow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984147C524F026C800362052 /* HomeRow.storyboard */; };
 		98424A962CED4F430071C7DB /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 984249C02CED4F430071C7DB /* OHHTTPStubs */; };
@@ -3439,7 +3438,6 @@
 		983E134F251EABF200149BD9 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		984147AF24F0261A00362052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feedback.storyboard; sourceTree = "<group>"; };
 		984147B524F0264B00362052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
-		984147B824F0268D00362052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PrivacyDashboard.storyboard; sourceTree = "<group>"; };
 		984147C124F026A300362052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tab.storyboard; sourceTree = "<group>"; };
 		984147C424F026C800362052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeRow.storyboard; sourceTree = "<group>"; };
 		98424AA92CED4F430071C7DB /* WebViewUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -10717,7 +10715,6 @@
 			isa = PBXGroup;
 			children = (
 				1E87615828A1517200C7C5CE /* PrivacyDashboardViewController.swift */,
-				984147B924F0268D00362052 /* PrivacyDashboard.storyboard */,
 			);
 			path = PrivacyDashboard;
 			sourceTree = "<group>";
@@ -11490,7 +11487,6 @@
 				C1CC5AE12EB4289300B69D3D /* confirmation-prompt-128.json in Resources */,
 				984147AE24F0261A00362052 /* Feedback.storyboard in Resources */,
 				85E8036F2E785BD8008E87CA /* ApplicationShortcutItems.xcassets in Resources */,
-				984147B724F0268D00362052 /* PrivacyDashboard.storyboard in Resources */,
 				9FC555D12E2F4AFC00763BEC /* default-browser-tutorial.mp4 in Resources */,
 				F176699F1E40BC86003D3222 /* Settings.storyboard in Resources */,
 				BB6696372E9E6613003CB6AD /* WinBackOffer.xcassets in Resources */,
@@ -14153,14 +14149,6 @@
 				D6D718702F17A3D800616AD1 /* ja */,
 			);
 			name = Authentication.storyboard;
-			sourceTree = "<group>";
-		};
-		984147B924F0268D00362052 /* PrivacyDashboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				984147B824F0268D00362052 /* Base */,
-			);
-			name = PrivacyDashboard.storyboard;
 			sourceTree = "<group>";
 		};
 		984147C224F026A300362052 /* Tab.storyboard */ = {
