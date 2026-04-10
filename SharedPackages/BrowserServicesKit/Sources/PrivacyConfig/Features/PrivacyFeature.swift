@@ -587,6 +587,11 @@ public enum HTMLHistoryPageSubfeature: String, Equatable, PrivacySubfeature {
     case isLaunched
 }
 
+public enum TabSuspensionSubfeature: String, Equatable, PrivacySubfeature {
+    public var parent: PrivacyFeature { .tabSuspension }
+    case memoryPressureTrigger
+}
+
 public enum ContentBlockingSubfeature: String, Equatable, PrivacySubfeature {
     public var parent: PrivacyFeature { .contentBlocking }
     case tdsNextExperimentBaseline
