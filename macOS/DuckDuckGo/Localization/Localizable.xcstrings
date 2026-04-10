@@ -84548,6 +84548,66 @@
         }
       }
     },
+    "preferences.autoplay.caption" : {
+      "comment" : "Caption for the autoplay blocking preference picker in General preferences",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gilt nicht für Videos, die im Duck Player geöffnet werden, wenn die Option „Videos beim Öffnen im Duck Player automatisch abspielen“ aktiviert ist."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Doesn't apply to videos opened in Duck Player when 'Autoplay videos when opened in Duck Player' is on."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se aplica a los vídeos que se abren en Duck Player cuando la opción «Reproducir automáticamente los vídeos cuando se abran en Duck Player» está activada."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne s'applique pas aux vidéos ouvertes dans Duck Player lorsque l'option « Lecture automatique des vidéos ouvertes dans Duck Player » est activée."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non si applica ai video aperti in Duck Player quando l'opzione \"Riproduzione automatica dei video quando li apri in Duck Player\" è attiva."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niet van toepassing op video's die worden geopend in Duck Player wanneer 'Video's automatisch afspelen wanneer geopend in Duck Player' is ingeschakeld."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie dotyczy filmów otwieranych w Duck Player, gdy opcja „Automatyczne odtwarzanie filmów po otwarciu w Duck Player” jest włączona."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não se aplica a vídeos abertos no Duck Player quando a opção \"Reproduzir vídeos automaticamente quando abertos no Duck Player\" estiver ativada."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не относится к видео, открытым в Duck Player, когда включена опция «Автовоспроизведение видео при открытии в Duck Player»."
+          }
+        }
+      }
+    },
     "preferences.autoplay.label" : {
       "comment" : "Label for the autoplay blocking preference picker in General preferences",
       "extractionState" : "extracted_with_value",
@@ -84555,55 +84615,55 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autoplay von Websites zulassen"
+            "value" : "Website-Medien automatisch abspielen"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Allow websites to autoplay"
+            "value" : "Autoplay website media"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Permitir la reproducción automática de sitios web"
+            "value" : "Reproducción automática de medios web"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autoriser la lecture automatique des sites Web"
+            "value" : "Lecture automatique des médias du site web"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Consenti ai siti web di riprodurre automaticamente"
+            "value" : "Riproduzione automatica dei contenuti multimediali dei siti web"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laat websites automatisch afspelen"
+            "value" : "Automatisch afspelen van websitemedia"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pozwól sobie na automatyczne odtwarzanie stron"
+            "value" : "Automatyczne odtwarzanie multimediów w witrynach"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Permitir a reprodução automática em sites"
+            "value" : "Reproduzir multimédia do website automaticamente"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Разрешить автовоспроизведение на сайтах"
+            "value" : "Автовоспроизведение медиа на сайте"
           }
         }
       }
@@ -84735,55 +84795,55 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Video mit stummgeschaltetem Ton"
+            "value" : "Videos mit Ton stoppen"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Video with audio muted"
+            "value" : "Stop videos with sound"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vídeo con audio silenciado"
+            "value" : "Detener vídeos con sonido"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vidéo avec son désactivé"
+            "value" : "Arrêter les vidéos avec son"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Video con audio disattivato"
+            "value" : "Interrompi video con audio"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Video met gedempt geluid"
+            "value" : "Video’s met geluid stoppen"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wideo z wyciszonym dźwiękiem"
+            "value" : "Zatrzymaj wideo z dźwiękiem"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vídeo com áudio silenciado"
+            "value" : "Parar vídeos com som"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Видео без звука"
+            "value" : "Остановить видео со звуком"
           }
         }
       }
