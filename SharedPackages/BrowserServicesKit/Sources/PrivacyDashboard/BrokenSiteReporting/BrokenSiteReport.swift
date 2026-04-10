@@ -116,6 +116,10 @@ public struct BrokenSiteReport {
 #endif
 
 #if os(macOS)
+    let lastTabSuspension: String?
+#endif
+
+#if os(macOS)
     public init(
         siteUrl: URL,
         category: String,
@@ -145,6 +149,7 @@ public struct BrokenSiteReport {
         privacyExperiments: String,
         isPirEnabled: Bool?,
         isForceDarkModeEnabled: Bool?,
+        lastTabSuspension: String?,
         autoplayBlockingMode: String? = nil,
         pageLoadTiming: WKPageLoadTiming?,
         breakageData: String? = nil
@@ -177,6 +182,7 @@ public struct BrokenSiteReport {
         self.privacyExperiments = privacyExperiments
         self.isPirEnabled = isPirEnabled
         self.isForceDarkModeEnabled = isForceDarkModeEnabled
+        self.lastTabSuspension = lastTabSuspension
         self.autoplayBlockingMode = autoplayBlockingMode
         self.pageLoadTiming = pageLoadTiming
         self.breakageData = breakageData
@@ -343,6 +349,12 @@ public struct BrokenSiteReport {
         result["variant"] = variant
         if isAfterSuppressedXSafariRedirect {
             result["isAfterSuppressedXSafariRedirect"] = "true"
+        }
+#endif
+
+#if os(macOS)
+        if let lastTabSuspension {
+            result["lastTabSuspension"] = lastTabSuspension
         }
 #endif
 
