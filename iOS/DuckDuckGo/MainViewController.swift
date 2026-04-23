@@ -1551,6 +1551,20 @@ class MainViewController: UIViewController {
             lastActiveTabStore.recordActiveTab(uid: tabModel.uid)
         }
 
+        if let hatch {
+            let targetTab = hatch.targetTab
+            unifiedToggleInputCoordinator?.setEscapeHatch(hatch, onTapped: { [weak self] in
+                guard let self else { return }
+                guard tabManager.tabsModel(for: targetTab.mode).tabExists(tab: targetTab) else {
+                    clearEscapeHatch()
+                    return
+                }
+                onSwitchToTab(targetTab)
+            })
+        } else {
+            clearEscapeHatch()
+        }
+
         addToContentContainer(controller: controller)
         viewCoordinator.logoContainer.isHidden = true
         adjustNewTabPageSafeAreaInsets(for: appSettings.currentAddressBarPosition)
@@ -1593,7 +1607,7 @@ class MainViewController: UIViewController {
         newTabPageViewController?.willMove(toParent: nil)
         newTabPageViewController?.dismiss()
         newTabPageViewController = nil
-        currentNTPEscapeHatch = nil
+        clearEscapeHatch()
     }
 
     @IBAction func onFirePressed() {
@@ -4152,6 +4166,12 @@ extension MainViewController: OmniBarDelegate {
         return currentNTPEscapeHatch
     }
 
+    private func clearEscapeHatch() {
+        newTabPageViewController?.setEscapeHatch(nil)
+        currentNTPEscapeHatch = nil
+        unifiedToggleInputCoordinator?.setEscapeHatch(nil, onTapped: nil)
+    }
+
     func useNewOmnibarTransitionBehaviour() -> Bool {
         escapeHatchForEditingState() != nil
     }
@@ -4159,6 +4179,7 @@ extension MainViewController: OmniBarDelegate {
     func onSwitchToTab(_ tab: Tab) {
         let targetTabsModel = tabManager.tabsModel(for: tab.mode)
         guard targetTabsModel.tabExists(tab: tab) else {
+            clearEscapeHatch()
             viewCoordinator.omniBar.endEditing()
             return
         }
@@ -4326,8 +4347,7 @@ extension MainViewController: NewTabPageControllerDelegate {
     func newTabPageDidRequestSwitchToTab(_ controller: NewTabPageViewController, tab: Tab) {
         let targetTabsModel = tabManager.tabsModel(for: tab.mode)
         guard targetTabsModel.tabExists(tab: tab) else {
-            controller.setEscapeHatch(nil)
-            currentNTPEscapeHatch = nil
+            clearEscapeHatch()
             return
         }
         let currentTab = tabManager.currentTabsModel.currentTab
@@ -4338,7 +4358,7 @@ extension MainViewController: NewTabPageControllerDelegate {
             closeTab(currentTab)
         }
         selectTab(tab)
-        currentNTPEscapeHatch = nil
+        clearEscapeHatch()
     }
 
     func newTabPageDidDismissDuckAIExperimentCompletion(_ controller: NewTabPageViewController) {
