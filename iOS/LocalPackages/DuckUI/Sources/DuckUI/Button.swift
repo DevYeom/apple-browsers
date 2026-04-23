@@ -139,6 +139,7 @@ public struct SecondaryDestructiveButtonStyle: ButtonStyle {
             .padding(.vertical)
             .padding(.horizontal, fullWidth ? nil : 24)
             .frame(minWidth: 0, maxWidth: fullWidth ? .infinity : nil, maxHeight: compact ? Consts.height - 10 : Consts.height)
+            .contentShape(RoundedRectangle(cornerRadius: Consts.cornerRadius))
             .background(configuration.isPressed ? pressedBackgroundColor : Color.clear)
             .overlay(
                 RoundedRectangle(cornerRadius: Consts.cornerRadius)
