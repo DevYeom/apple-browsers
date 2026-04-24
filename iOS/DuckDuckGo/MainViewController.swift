@@ -4639,10 +4639,6 @@ extension MainViewController: TabDelegate {
         showFireButtonPulse()
     }
 
-    func tabDidRequestToggleSidebarOnCurrentTab(_ tab: TabViewController) {
-        currentTab?.submitToggleSidebarAction()
-    }
-
     func tabDidRequestDeleteContextualChat(tab: TabViewController, chatID: String) {
         let cleaner = HistoryCleaner(featureFlagger: featureFlagger,
                                      privacyConfig: privacyConfigurationManager,
